@@ -68,19 +68,19 @@ set_ps1() {
 }
 
 # Set custom prompt
-PROMPT_COMMAND='set_ps1;'
+PROMPT_COMMAND='set_ps1'
 
 # Set GREP highlight color
 export GREP_COLOR='1;32'
 
 # Custom Xterm/RXVT Title
-case "$TERM" in
-xterm*|rxvt*)
-    PROMPT_COMMAND+='echo -ne "\e]0;${USER}@${HOSTNAME}: ${PWD}\007";'
-    ;;
-*)
-    ;;
-esac
+#case "$TERM" in
+#xterm*|rxvt*)
+#    PROMPT_COMMAND+='echo -ne "\e]0;${USER}@${HOSTNAME}: ${PWD}\007";'
+#    ;;
+#*)
+#    ;;
+#esac
 
 # Correct spelling errors for 'cd' command, and auto cd to directory
 # Only run this for debian systems (AWS doesn't have 'shopt')
@@ -88,4 +88,3 @@ if [ -f /etc/debian_version ]; then
   shopt -s cdspell
   shopt -s autocd
 fi
-
