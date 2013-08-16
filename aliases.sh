@@ -13,9 +13,9 @@
 alias serve="python -m 'SimpleHTTPServer'"
 
 # -- bash
-alias l='ls -Cv --group-directories-first'
-alias ll='ls -lv --group-directories-first'
-alias la='ls -lvA --group-directories-first'
+alias l='ls -Cv'
+alias ll='ls -lv'
+alias la='ls -lvA'
 
 alias _='sudo'
 alias n='nautilus .'

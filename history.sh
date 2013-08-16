@@ -31,5 +31,5 @@ _bash_history_sync() {
   builtin history -r
 }
 
-export PROMPT_COMMAND+='_bash_history_sync;'
+export PROMPT_COMMAND+='&& _bash_history_sync;'
 
